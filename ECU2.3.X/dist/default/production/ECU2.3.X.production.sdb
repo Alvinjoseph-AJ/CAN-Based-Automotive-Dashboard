@@ -1,0 +1,324 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4580 ]
+[d frameptr 4065 ]
+"25 C:\Users\Alvin\MPLABXProjects\ECU2.3.X\can.c
+[e E10489 _CanOpMode `uc
+e_can_op_mode_bits 224
+e_can_op_mode_normal 0
+e_can_op_mode_sleep 32
+e_can_op_mode_loop 64
+e_can_op_mode_listen 96
+e_can_op_mode_config 128
+]
+"4 C:\Users\Alvin\MPLABXProjects\ECU2.3.X\adc.c
+[v _init_adc init_adc `(v  1 e 1 0 ]
+"43
+[v _read_adc read_adc `(us  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"43 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"10 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+"18 C:\Users\Alvin\MPLABXProjects\ECU2.3.X\can.c
+[v _init_can init_can `(v  1 e 1 0 ]
+"70
+[v _set_msg_id_std set_msg_id_std `(v  1 s 1 set_msg_id_std ]
+"75
+[v _can_transmit can_transmit `(v  1 e 1 0 ]
+"7 C:\Users\Alvin\MPLABXProjects\ECU2.3.X\function.c
+[v _init_led init_led `(v  1 e 1 0 ]
+"15
+[v _init_digital_keypad init_digital_keypad `(v  1 e 1 0 ]
+"21
+[v _rpm rpm `(v  1 e 1 0 ]
+"29
+[v _indicator indicator `(v  1 e 1 0 ]
+"84
+[v _read_switch read_switch `(uc  1 e 1 0 ]
+"101
+[v _init_timer init_timer `(v  1 e 1 0 ]
+"121
+[v _isr isr `IIH(v  1 e 1 0 ]
+"18 C:\Users\Alvin\MPLABXProjects\ECU2.3.X\main.c
+[v _intit_config intit_config `(v  1 e 1 0 ]
+"26
+[v _main main `(v  1 e 1 0 ]
+"4422 C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc/pic18f4580.h
+[v _RXFCON0 RXFCON0 `VEuc  1 e 1 @3540 ]
+"20963
+[v _TXB0SIDH TXB0SIDH `VEuc  1 e 1 @3905 ]
+"21075
+[v _TXB0SIDL TXB0SIDL `VEuc  1 e 1 @3906 ]
+"21167
+[v _TXB0EIDH TXB0EIDH `VEuc  1 e 1 @3907 ]
+"21279
+[v _TXB0EIDL TXB0EIDL `VEuc  1 e 1 @3908 ]
+"21391
+[v _TXB0DLC TXB0DLC `VEuc  1 e 1 @3909 ]
+"21469
+[v _TXB0D0 TXB0D0 `VEuc  1 e 1 @3910 ]
+"23528
+[v _RXB0CON RXB0CON `VEuc  1 e 1 @3936 ]
+"23721
+[v _RXB0SIDH RXB0SIDH `VEuc  1 e 1 @3937 ]
+"23833
+[v _RXB0SIDL RXB0SIDL `VEuc  1 e 1 @3938 ]
+"24770
+[v _CANSTAT CANSTAT `VEuc  1 e 1 @3950 ]
+"24879
+[v _CANCON CANCON `VEuc  1 e 1 @3951 ]
+"24983
+[v _BRGCON1 BRGCON1 `VEuc  1 e 1 @3952 ]
+"25045
+[v _BRGCON2 BRGCON2 `VEuc  1 e 1 @3953 ]
+"25116
+[v _BRGCON3 BRGCON3 `VEuc  1 e 1 @3954 ]
+"25434
+[v _ECANCON ECANCON `VEuc  1 e 1 @3959 ]
+"25714
+[v _PORTB PORTB `VEuc  1 e 1 @3969 ]
+"25888
+[v _PORTC PORTC `VEuc  1 e 1 @3970 ]
+"27281
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+"30273
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
+"30399
+[v _ADRESL ADRESL `VEuc  1 e 1 @4035 ]
+"30406
+[v _ADRESH ADRESH `VEuc  1 e 1 @4036 ]
+"31712
+[v _TMR0 TMR0 `VEus  1 e 2 @4054 ]
+"32490
+[v _ACQT0 ACQT0 `VEb  1 e 0 @32259 ]
+"32493
+[v _ACQT1 ACQT1 `VEb  1 e 0 @32260 ]
+"32496
+[v _ACQT2 ACQT2 `VEb  1 e 0 @32261 ]
+"32499
+[v _ADCS0 ADCS0 `VEb  1 e 0 @32256 ]
+"32502
+[v _ADCS1 ADCS1 `VEb  1 e 0 @32257 ]
+"32505
+[v _ADCS2 ADCS2 `VEb  1 e 0 @32258 ]
+"32514
+[v _ADFM ADFM `VEb  1 e 0 @32263 ]
+"32526
+[v _ADON ADON `VEb  1 e 0 @32272 ]
+"35487
+[v _GIE GIE `VEb  1 e 0 @32663 ]
+"35499
+[v _GO GO `VEb  1 e 0 @32273 ]
+"35502
+[v _GODONE GODONE `VEb  1 e 0 @32273 ]
+"36081
+[v _PEIE PEIE `VEb  1 e 0 @32662 ]
+"36117
+[v _PSA PSA `VEb  1 e 0 @32427 ]
+"36192
+[v _RB0 RB0 `VEb  1 e 0 @31752 ]
+"36195
+[v _RB1 RB1 `VEb  1 e 0 @31753 ]
+"36210
+[v _RB6 RB6 `VEb  1 e 0 @31758 ]
+"36213
+[v _RB7 RB7 `VEb  1 e 0 @31759 ]
+"38964
+[v _T08BIT T08BIT `VEb  1 e 0 @32430 ]
+"38970
+[v _T0CS T0CS `VEb  1 e 0 @32429 ]
+"39093
+[v _TMR0IE TMR0IE `VEb  1 e 0 @32661 ]
+"39096
+[v _TMR0IF TMR0IF `VEb  1 e 0 @32658 ]
+"39102
+[v _TMR0ON TMR0ON `VEb  1 e 0 @32431 ]
+"39174
+[v _TRISB0 TRISB0 `VEb  1 e 0 @31896 ]
+"39177
+[v _TRISB1 TRISB1 `VEb  1 e 0 @31897 ]
+"39180
+[v _TRISB2 TRISB2 `VEb  1 e 0 @31898 ]
+"39183
+[v _TRISB3 TRISB3 `VEb  1 e 0 @31899 ]
+"39192
+[v _TRISB6 TRISB6 `VEb  1 e 0 @31902 ]
+"39195
+[v _TRISB7 TRISB7 `VEb  1 e 0 @31903 ]
+"39600
+[v _TXB0REQ TXB0REQ `VEb  1 e 0 @31235 ]
+"40350
+[v _VCFG0 VCFG0 `VEb  1 e 0 @32268 ]
+"40356
+[v _VCFG1 VCFG1 `VEb  1 e 0 @32269 ]
+"19 C:\Users\Alvin\MPLABXProjects\ECU2.3.X\function.c
+[v _sec sec `i  1 e 2 0 ]
+"119
+[v _count count `ui  1 e 2 0 ]
+"26 C:\Users\Alvin\MPLABXProjects\ECU2.3.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"42
+} 0
+"21 C:\Users\Alvin\MPLABXProjects\ECU2.3.X\function.c
+[v _rpm rpm `(v  1 e 1 0 ]
+{
+"25
+[v rpm@rpm rpm `uc  1 a 1 56 ]
+"27
+} 0
+"43 C:\Users\Alvin\MPLABXProjects\ECU2.3.X\adc.c
+[v _read_adc read_adc `(us  1 e 2 0 ]
+{
+[v read_adc@channel channel `uc  1 p 1 wreg ]
+"45
+[v read_adc@reg_val reg_val `us  1 a 2 4 ]
+"43
+[v read_adc@channel channel `uc  1 p 1 wreg ]
+"48
+[v read_adc@channel channel `uc  1 p 1 6 ]
+"56
+} 0
+"10 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 p 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 17 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 16 ]
+"10
+[v ___xxtofl@sign sign `uc  1 p 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 7 ]
+"15
+[v ___xxtofl@sign sign `uc  1 p 1 15 ]
+"44
+} 0
+"43 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 55 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 54 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 46 ]
+"70
+} 0
+"11 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+{
+"21
+[v ___fldiv@grs grs `ul  1 a 4 40 ]
+"22
+[v ___fldiv@rem rem `ul  1 a 4 33 ]
+"20
+[v ___fldiv@new_exp new_exp `s  1 a 2 38 ]
+"19
+[v ___fldiv@aexp aexp `uc  1 a 1 45 ]
+"18
+[v ___fldiv@bexp bexp `uc  1 a 1 44 ]
+"16
+[v ___fldiv@sign sign `uc  1 a 1 37 ]
+"11
+[v ___fldiv@b b `d  1 p 4 21 ]
+[v ___fldiv@a a `d  1 p 4 25 ]
+"185
+} 0
+"18 C:\Users\Alvin\MPLABXProjects\ECU2.3.X\main.c
+[v _intit_config intit_config `(v  1 e 1 0 ]
+{
+"24
+} 0
+"101 C:\Users\Alvin\MPLABXProjects\ECU2.3.X\function.c
+[v _init_timer init_timer `(v  1 e 1 0 ]
+{
+"117
+} 0
+"7
+[v _init_led init_led `(v  1 e 1 0 ]
+{
+"13
+} 0
+"15
+[v _init_digital_keypad init_digital_keypad `(v  1 e 1 0 ]
+{
+"18
+} 0
+"18 C:\Users\Alvin\MPLABXProjects\ECU2.3.X\can.c
+[v _init_can init_can `(v  1 e 1 0 ]
+{
+"57
+} 0
+"4 C:\Users\Alvin\MPLABXProjects\ECU2.3.X\adc.c
+[v _init_adc init_adc `(v  1 e 1 0 ]
+{
+"41
+} 0
+"29 C:\Users\Alvin\MPLABXProjects\ECU2.3.X\function.c
+[v _indicator indicator `(v  1 e 1 0 ]
+{
+"31
+[v indicator@key key `uc  1 a 1 15 ]
+"32
+[v indicator@flag flag `i  1 s 2 flag ]
+"33
+[v indicator@ind ind `i  1 s 2 ind ]
+"82
+} 0
+"84
+[v _read_switch read_switch `(uc  1 e 1 0 ]
+{
+[v read_switch@detection detection `i  1 p 2 0 ]
+"85
+[v read_switch@flag flag `i  1 s 2 flag ]
+"97
+} 0
+"75 C:\Users\Alvin\MPLABXProjects\ECU2.3.X\can.c
+[v _can_transmit can_transmit `(v  1 e 1 0 ]
+{
+"90
+[v can_transmit@i i `i  1 a 2 13 ]
+"76
+[v can_transmit@ptr ptr `*.39uc  1 a 2 11 ]
+"75
+[v can_transmit@msg_id msg_id `us  1 p 2 4 ]
+[v can_transmit@data data `*.30Cuc  1 p 1 6 ]
+[v can_transmit@len len `uc  1 p 1 7 ]
+"94
+} 0
+"70
+[v _set_msg_id_std set_msg_id_std `(v  1 s 1 set_msg_id_std ]
+{
+[v set_msg_id_std@id id `ui  1 p 2 0 ]
+"73
+} 0
+"121 C:\Users\Alvin\MPLABXProjects\ECU2.3.X\function.c
+[v _isr isr `IIH(v  1 e 1 0 ]
+{
+"131
+} 0
